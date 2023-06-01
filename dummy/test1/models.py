@@ -38,7 +38,7 @@ class Account(models.Model):
         self.status = 'signedup'
         self.signup_date = timezone.now()
         self.save()
-class BillingInfo(models.Model):
-    account = models.OneToOneField('accounts.Account', related_name='billing_info')
-    address = models.TextField()
-    card_type = models.CharField(max_length=20, choices=CARD_TYPE_CHOICES)
+# class BillingInfo(models.Model):
+#     account = models.OneToOneField('accounts.Account', related_name='billing_info')
+#     address = models.TextField()
+#     card_type = models.CharField(max_length=20, choices=CARD_TYPE_CHOICES)
